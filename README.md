@@ -23,10 +23,10 @@ framework:
     buses:
       default:
         middleware:
-          - "Tideways\SymfonyMessenger\TidewaysMiddleware"
+          - "Tideways\\SymfonyMessenger\\TidewaysMiddleware"
 
 services:
-  "Tideways\SymfonyMessenger\TidewaysMiddleware": ~
+  "Tideways\\SymfonyMessenger\\TidewaysMiddleware": ~
 ```
 
 ## Configuration for Shopware
