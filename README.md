@@ -41,6 +41,7 @@ framework:
     buses:
       messenger.bus.shopware:
         middleware:
+          - "Shopware\\Core\\Framework\\MessageQueue\\Midleware\\RetryMiddleware"
           - "Tideways\\SymfonyMessenger\\TidewaysMiddleware"
 
 services:
