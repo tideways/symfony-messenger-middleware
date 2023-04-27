@@ -11,6 +11,11 @@
             "Tideways\\SymfonyMessenger\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tideways\\Tests\\SymfonyMessenger\\": "tests/"
+        }
+    },
     "require-dev": {
         "phpunit/phpunit": "^10.1"
     }
