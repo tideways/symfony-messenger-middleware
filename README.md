@@ -23,10 +23,10 @@ framework:
     buses:
       default:
         middleware:
-          - "Tideways\\SymfonyMessenger\\TidewaysMiddleware"
+          - "Tideways\\SymfonyMessenger\\TidewaysOnlyConsumedByWorkerMiddleware"
 
 services:
-  "Tideways\\SymfonyMessenger\\TidewaysMiddleware": ~
+  "Tideways\\SymfonyMessenger\\TidewaysOnlyConsumedByWorkerMiddleware": ~
 ```
 
 ## Configuration for Shopware
@@ -42,8 +42,8 @@ framework:
       messenger.bus.shopware:
         middleware:
           - "Shopware\\Core\\Framework\\MessageQueue\\Middleware\\RetryMiddleware"
-          - "Tideways\\SymfonyMessenger\\TidewaysMiddleware"
+          - "Tideways\\SymfonyMessenger\\TidewaysOnlyConsumedByWorkerMiddleware"
 
 services:
-  "Tideways\\SymfonyMessenger\\TidewaysMiddleware": ~
+  "Tideways\\SymfonyMessenger\\TidewaysOnlyConsumedByWorkerMiddleware": ~
 ```
