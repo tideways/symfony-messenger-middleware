@@ -1,8 +1,5 @@
 # Tideways Middleware for Symfony Messenger
 
-This package is currently under development and might be moved into the
-Tideways PHP Extension or stay independent. Consider it as prototype.
-
 This middleware for Symfony Messenger starts a Tideways trace for every
 processed message, names the trace after the message class and implements
 integration with Tideways exception tracking.
