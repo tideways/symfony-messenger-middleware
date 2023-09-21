@@ -39,7 +39,7 @@ requires just a slightly different configuration:
 framework:
   messenger:
     buses:
-      messenger.bus.shopware:
+      messenger.bus.default: # On Shopware 6.4 this works with "messenger.bus.shopware" instead.
         middleware:
           - "Shopware\\Core\\Framework\\MessageQueue\\Middleware\\RetryMiddleware"
           - "Tideways\\SymfonyMessenger\\TidewaysOnlyConsumedByWorkerMiddleware"
