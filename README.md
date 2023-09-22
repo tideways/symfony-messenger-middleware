@@ -4,6 +4,8 @@ This middleware for Symfony Messenger starts a Tideways trace for every
 processed message, names the trace after the message class and implements
 integration with Tideways exception tracking.
 
+If you want to see traces for processed messages, then the INI setting `tideways.enable_cli=1` must be set.
+
 [Tideways](https://tideways.com) is a monitoring, profiling and exception tracking combo for PHP.
 
 ## Installation
