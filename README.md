@@ -68,3 +68,17 @@ framework:
 services:
   "Tideways\\SymfonyMessenger\\TidewaysOnlyConsumedByWorkerMiddleware": ~
 ```
+
+## Configuration for TYPO3
+
+TYPO3 uses the Symfony Messenger under the hood and using this middleware
+requires just a slightly different configuration:
+
+```yaml
+# YOUR_EXTENSION/Configuration/Services.yaml
+services:
+  Tideways\SymfonyMessenger\TidewaysOnlyConsumedByWorkerMiddleware:
+    tags:
+      - name: 'messenger.middleware'
+        before: 'Symfony\Component\Messenger\Middleware\SendMessageMiddleware'
+  ```
