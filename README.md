@@ -1,5 +1,11 @@
 # Tideways Middleware for Symfony Messenger
 
+> [!NOTE]  
+> Please note that when using the Tideways-Extension version 5.18.0 or greater this middleware is not needed anymore, as the Tideways
+> instruments the messenger automatically. 
+> 
+> See: https://tideways.com/profiler/blog/changelog/automatic-transaction-names-for-symfony-shopware-and-laravel-background-jobs
+
 This middleware for Symfony Messenger starts a Tideways trace for every
 processed message, names the trace after the message class and implements
 integration with Tideways exception tracking.
